@@ -88,6 +88,7 @@
 </div>
 
 <script>
+/**
   function submit_data(name, email, count, description) {
     var params = {name: name, email: email, count: count, message: description, guestbook_id: {{site.wedding.reservations.id}} };
     var jqXHR = $.getJSON("{{site.wedding.reservations.server_host}}/reservations/new?callback=?", {reservation:params}, function(data) {
@@ -130,4 +131,5 @@
 
     return false;
   }
+  **/
 </script>
