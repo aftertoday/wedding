@@ -1,3 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>我们结婚啦～～</title>
+  <link href="favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" media="screen">
+  <link rel="stylesheet" href="prettyphoto/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/ie.css" media="screen" />
+  <![endif]-->
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/jquery.scrollto.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="prettyphoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/jquery.validate.js"></script>
+  <script src="javascripts/main.js"></script>
+  </head>
+
+  <body>
+    <div class='navigation'>
+  <div class='container'>
+    <div class='menu'>
+      <a href="#home-anchor" class="pull-left" id="logo">
+        雍志祥
+        <img src="images/two-hearts.png">
+        许玉转
+      </a>
+      <object type="application/x-shockwave-flash" data="images/dewplayer.swf" width="200" height="20" id="dewplayer" style="margin-top: 20px;">
+  <param name="wmode" value="transparent">
+  <param name="movie" value="images/dewplayer.swf">
+  <param name="flashvars" value="mp3=http://assets.91wedding.com/2/bucket/this-ring.mp3&amp;autostart=1&amp;autoreplay=1&amp;showtime=1" />
+</object>
+
+      <ul class="pull-right">
+        <li>
+          <a href='#story-anchor'>我们的故事</a>
+        </li>
+        <li>
+          <a href='#photos-anchor'>照片</a>
+        </li>
+        <li>
+          <a href='#wedding-anchor'>婚礼</a>
+        </li>
+        <li>
+          <a href='#map-anchor'>地图</a>
+        </li>
+        <li>
+          <a href='#comments-anchor'>祝福</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<span id="home-anchor" class="anchor">&nbsp;</span>
+<div class="container-fluid" id="home">
+  <div id="invitation-container" class="well">
+  <h4>欢迎参加雍志祥和许玉转爱的婚礼！</h4>
+  <p>
+    <i class="icon-time"></i>
+    2014年11月29日(星期六) 下午 6:00
+  </p>
+  <p>
+    <i class="icon-map-marker"></i>
+    天长市杨村镇
+  </p>
+  <p>
+    <i class="icon-signal"></i>
+    13661867804
+  </p>
+  <p>
+    <i class="icon-envelope"></i>
+    ah_yong@126.com
+  </p>
+</div>
+  <div id="myCarousel" class="carousel slide">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="item">
+        <img src="" class="cover-image">
+      </div>
+	  <!--
+      <div class="item">
+        <img src="http://static.91wedding.com/photos/wedding/049.jpg" class="cover-image">
+      </div>
+      <div class="item active">
+        <img src="http://static.91wedding.com/photos/wedding/074.jpg" class="cover-image">
+      </div>
+	  -->
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div>
+</div>
+
+<span id="story-anchor" class="anchor">&nbsp;</span>
+<div class="container section" id="story">
+  <h2>我们的故事</h2>
+  <div id="timeline-embed"></div>
+  <script type="text/javascript">
+    var timeline_config = {
+        width:              '100%',
+        height:             '600',
+        css:                '/timeline/css/timeline.css',
+        js:                 '/timeline/js/timeline-min.js',
+        source:             
+    }
+  </script>
+  <script type="text/javascript" src="/timeline/js/storyjs-embed.js"></script>
+</div>
+<span id="photos-anchor" class="anchor">&nbsp;</span>
+<div class="container section" id="photos">
+  
+  <div class="btn-group" data-toggle="buttons-radio">
+    
+        <a href="#photos-pane-2" type="button" data-toggle="tab" class="btn active">婚纱照</a>
+      
+        <a href="#photos-pane-3" type="button" data-toggle="tab" class="btn">生活照</a>
+      
+  </div><br/>
+  
+
+  <div class="tab-content">
+        <div class="tab-pane active" id="photos-pane-2">
+      
+        <ul class="thumbnails gallery">
+          <!--
+          <li>
+            <a href="http://assets.91wedding.com/2/photos_81_original_013.jpg?1357362118" class="thumbnail" rel="prettyPhoto[2]"><img src="http://assets.91wedding.com/2/photos_81_thumb_013.jpg?1357362118"/></a>
+          </li>
+          -->          
+        </ul>
+      </div>      
+        <div class="tab-pane" id="photos-pane-3">
+      
+        <ul class="thumbnails gallery">
+          <!--
+          <li>
+            <a href="http://assets.91wedding.com/2/photos_126_original_DFDS.jpg?1357362644" class="thumbnail" rel="prettyPhoto[3]"><img src="http://assets.91wedding.com/2/photos_126_thumb_DFDS.jpg?1357362644"/></a>
+          </li>         
+          -->
+        </ul>
+      </div>
+    
+  </div>
+</div>
+
+
+<span id="wedding-anchor" class="anchor">&nbsp;</span>
+<div class="container section" id="wedding">
+  <div class="row-fluid">
+    <div class="span4 offset1">
+      <h2>婚礼</h2>
+      <p>
+        <i class="icon-time"></i>
+        2014年11月29日(星期六) 下午 6:00
+      </p>
+      <p>
+        <i class="icon-map-marker"></i>
+        天长市杨村镇
+      </p>
+      <!--
+	  <p>
+        <i class="icon-retweet"></i>
+        地铁2号线孝陵卫站3号出站口向东150米
+        <br/>
+      </p>
+      <p>
+        <i class="icon-retweet"></i>
+        乘坐游2在大栅栏站下
+      </p>
+      <p>
+        <i class="icon-plane"></i>
+        我们将与非南京市的宾客联系，安排食宿
+      </p>
+	  -->
+      <p>
+        <i class="icon-envelope"></i>
+        ah_yong@126.com
+      </p>
+      <p>
+        <i class="icon-signal"></i>
+        13661867804
+      </p>
+      <br/>
+      <h4>欢迎来参加我们的婚礼！</h4>
+      <form class="" id="rsvp-form"  method="post" action="#">
+  <p>为了方便安排酒席，如果您参加婚礼，请告诉我们具体信息，我们将会与您确认。</p>
+  <input type="hidden" name="host_email" value="<%= item[:email] %>">
+
+  <label for="inputName">您的姓名:</label>
+  <input type="text" id="inputName" placeholder="李三金" name="name" class="required input-xlarge" />
+
+  <label for="inputEmail">电子邮箱:</label>
+  <input type="text" id="inputEmail" placeholder="you@gmail.com" class="required email input-xlarge" />
+
+  <label>宾客人数:</label>
+  <select id="inputGuestsCount" class="input-xlarge">
+    <option>0</option>
+    <option selected>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
+
+  <label>宾客说明:</label>
+  <textarea rows="2" placeholder="我，老婆和小孩" id="inputGuestsDescription" class="input-xlarge"></textarea>
+  <br/>
+
+  <button type="submit" class="btn btn-success">
+    <i class="icon-glass icon-white"></i>
+    我要喝喜酒
+  </button>
+</form>
+
+<div class="modal hide" id="confirm-dialog">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>确认参加婚礼信息</h3>
+  </div>
+  <div class="modal-body">
+    <dl class="dl-horizontal">
+      <dt>姓名:</dt>
+      <dd id="name"></dd>
+      <dt>邮箱:</dt>
+      <dd id="email"></dd>
+      <dt>人数:</dt>
+      <dd id="guests-count"></dd>
+      <dt>说明:</dt>
+      <dd id="guests-description"></dd>
+    </dl>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">修改</a>
+    <a href="#" class="btn btn-primary" id="rsvp-confirm-btn">发送</a>
+  </div>
+</div>
+
+<div class="modal hide" id="success-dialog">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>发送消息成功</h3>
+  </div>
+  <div class="modal-body">
+    <p class="alert alert-success">感谢登记参加我们的婚礼，您将会收到确认邮件通知。</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">关闭</a>
+  </div>
+</div>
+
+<div class="modal hide" id="failure-dialog">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>错误信息</h3>
+  </div>
+  <div class="modal-body">
+    <p class="alert alert-error">对不起，提交信息遇到了错误。</p>
+    <p>
+      <i class="icon-info-sign"></i>
+      您可以稍后重试
+    </p>
+    <p>
+      <i class="icon-info-sign"></i>
+      您也可以通过电话、短信或电子邮件发送信息给我们
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">关闭</a>
+  </div>
+</div>
+
+<script>
+  function submit_data(name, email, count, description) {
+    var params = {name: name, email: email, count: count, message: description, guestbook_id: 2 };
+    var jqXHR = $.getJSON("http://i.91wedding.com/reservations/new?callback=?", {reservation:params}, function(data) {
+      if (data.success) {
+        $("#success-dialog").modal({backdrop:false});
+        $("#rsvp-form")[0].reset();
+      } else {
+        $("#failure-dialog p.alert").text(data.message);
+        $("#failure-dialog").modal({backdrop:false});
+      }
+    })
+
+    jqXHR.error(function() {
+      $("#failure-dialog p.alert").text("对不起，提交信息遇到了错误，请稍后重试。");
+      $("#failure-dialog").modal({backdrop:false});
+    })
+  }
+
+  function form_submit() {
+    if(!$("#rsvp-form").valid()) return false;
+
+    var name = $("#rsvp-form #inputName").val();
+    var email = $("#rsvp-form #inputEmail").val();
+    var count = parseInt($("#rsvp-form #inputGuestsCount").val());
+    var description = $("#rsvp-form #inputGuestsDescription").val();
+
+    $("#confirm-dialog #name").text(name);
+    $("#confirm-dialog #email").text(email);
+    $("#confirm-dialog #guests-count").text(count);
+    $("#confirm-dialog #guests-description").text(description);
+
+    $("#confirm-dialog").modal({backdrop:false});
+
+    $("#confirm-dialog #rsvp-confirm-btn").off("click");
+    $("#confirm-dialog #rsvp-confirm-btn").click(function(){
+      $("#confirm-dialog").modal('hide');
+      submit_data(name, email, count, description);
+      return false;
+    })
+
+    return false;
+  }
+</script>
+
+    </div>
+    <div class="span6">
+      <img src="images/wedding.jpg" />
+    </div>
+  </div>
+  </div>
+</div>
+
+<span id="map-anchor" class="anchor">&nbsp;</span>
+<div class="container section" id="map">
+  <h2>地图</h2>
+  <div class="row-fluid">
+    <div class="span12">
+      <!--百度地图容器-->
+      <div id="dituContent"></div>
+
+      <br/>
+      <br/>
+
+	  <!--
+      <p><strong>说明：</strong></p>
+      <p>
+        <i class="icon-retweet"></i>
+        到达<strong>南京南站</strong>的朋友，可以坐1号南延线，在新街口换乘2号线，在孝陵卫站下
+      </p>
+      <p>
+        <i class="icon-retweet"></i>
+        到达<strong>南京站</strong>的朋友，可以坐1号线，在新街口换乘2号线，在孝陵卫站下
+      </p>
+      <p>
+        <i class="icon-plane"></i>
+        我们将与非南京市的宾客联系，安排食宿
+      </p>
+	  -->
+      <p>
+        <i class="icon-envelope"></i>
+        ah_yong@126.com
+      </p>
+      <p>
+        <i class="icon-signal"></i>
+        13661867804
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  function makeMarker(latitude, longitude, title, content) {
+    var marker = new BMap.Marker(new BMap.Point(longitude, latitude));  //创建标注
+    var label = new BMap.Label(title, {'offset': new BMap.Size(20,3)}); //创建标签
+
+    label.setStyle({
+      borderColor: "#999",
+      color: "red",
+      "font-weight": "bold"
+    });
+
+    marker.setLabel(label);
+    var infoWindow = new BMap.InfoWindow("<b class='iw_poi_title'>" + title + "</b>"
+        + "<div class='iw_poi_content'>" + content + "</div>"); //创建信息窗口
+    marker.addEventListener("click", function(){this.openInfoWindow(infoWindow);});
+    return marker;
+  }
+
+  function showMap(){
+    var map = new BMap.Map("dituContent");
+    var point = new BMap.Point(118.823217, 32.039911);
+    map.centerAndZoom(point, 13); //设置地图中心坐标
+    map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+
+    var markers = [{"latitude":32.091072,"longitude":118.803096,"title":"南京火车站","content":"南京火车站，动车、快车停靠。可以直接换乘1号线地铁"},{"latitude":31.976958,"longitude":118.803959,"title":"南京南站","content":"高铁站，可以直接换乘1号南延线地铁"},{"latitude":32.046766,"longitude":118.790736,"title":"新街口","content":"南京市中心，可以换乘地铁1号线、2号线"},{"latitude":32.039666,"longitude":118.865186,"title":"金港小镇—刘风云&王银爱婚礼","content":"南京市玄武区孝陵卫街37号金港小镇"}];
+
+    for (var i = 0; i < markers.length; i++) {
+      var marker = markers[i];
+      map.addOverlay(makeMarker(marker.latitude, marker.longitude, marker.title, marker.content));
+    }
+  }
+</script>
+
+
+<!--
+<span id="comments-anchor" class="anchor">&nbsp;</span>
+<div class="container section" id="comments">
+  <h2>留言祝福</h2>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript" src="http://disqus.com/forums/91wedding/embed.js"></script>
+</div>
+-->
+
+<div class='container'>
+<footer>
+  <div class="pull-left">
+    
+  </div>
+</footer>
+</div>
+
+
+
+  </body>
+</html>
+
+
+
+<!--
 ---
 layout: default
 ---
@@ -10,3 +442,4 @@ layout: default
 {% include map.html %}
 {% include disqus.html %}
 {% include footer.html %}
+-->
