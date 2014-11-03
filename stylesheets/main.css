@@ -1,111 +1,35 @@
+
+/*********** bootstrap-override ************/
+
 body {
-  font-family: Tahoma,Verdana,STHeiTi,simsun,sans-serif;
-  padding-top: 60px;
+  font-size: 14px;
+  background-color: #ECECEC;
+  font-family:Tahoma,Verdana,STHeiTi,simsun,sans-serif;
+  margin-top: 70px;
 }
 
-.bg-red {
-    background-color: #c03930;
-}
-.bg-orange {
-    background-color: #d8561e;
-}
-.bg-orange-yellow {
-    background-color: #ffa71a;
+/* overwrite prettyPhoto */
+.pp_social {
+  display: none;
 }
 
-
-.bg-green {
-    background-color: #47a74d;
-}
-.bg-blue {
-    background-color: #2a8fbd;
-}
-.bg-purple {
-    background-color: #bc223f;
-}
-
-
-.bg-pink {
-    background-color: #e84a5f;
-}
-.bg-tan {
-    background-color: #e8de8f;
-}
-.bg-forest-green {
-    background-color: #607848;
-}
-
-
-.bg-royal-purple {
-    background-color: #490a3d;
-}
-.bg-dragonfruit {
-    background-color: #bd1550;
-}
-.bg-sand {
-    background-color: #f0a639;
-}
-
-
-.bg-sky {
-    background-color: #39abcc;
-}
-.bg-lime {
-    background-color: #92f606;
-}
-.bg-grass {
-    background-color: #1eb908;
-}
-
-
-.bg-cyan {
-    background-color: #48eddc;
-}
-.bg-turquoise {
-    background-color: #1ba897;
-}
-.bg-peach {
-    background-color: #d890b0;
-}
-
-
-.bg-stone {
-    background-color: #8c9a9d;
-}
-.bg-army-green {
-    background-color: #646b49;
-}
-.bg-neon-orange {
-    background-color: #ff4824;
-}
-
-
-.bg-ocean {
-    background-color: #274be4;
-}
-.bg-neon-red {
-    background-color: #fe002d;
-}
-.bg-brown {
-    background-color: #b1721e;
-}
-
-
-.bg-pastel-red {
-    background-color: #a56357;
-}
-.bg-pastel-blue {
-    background-color: #60a9ba;
-}
-.bg-grey {
-    background-color: #ccc;
-}
-.bg-gray {
-    background-color: #ccc;
+.section {
+  background-color: white;
+  margin: 20px auto;
+  padding: 30px 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px #aaa;
+  -webkit-box-shadow: 2px 2px 8px #aaa;
+  -moz-box-shadow: 2px 2px 8px #aaa;
+  position: relative;
 }
 
 ::-moz-selection { background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+
+.center {
+  text-align: center;
+}
 
 label.error {
   color: red;
@@ -113,22 +37,13 @@ label.error {
   margin-left: 5px;
 }
 
-/**************** sections **********************/
-section {
-   margin-top: 30px;
-}
-
-.sect-head {
-    border-bottom: 5px solid rgba(33, 33, 33, 0.4);
-    text-align: left;
-    padding: 0.6em;
-    margin-bottom: 1.5em;
-    color: #fff;
+.anchor {
+  display: block;
+  height: 0;
 }
 
 /************* navigation styles *************/
 .navigation {
-  background: url(/images/stripe.png) repeat-x 0 -2px;
   width: 100%;
   background-color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.95);
@@ -148,8 +63,7 @@ section {
 }
 
 #logo img {
-  height: 40px;
-  margin-top: 0px;
+  margin-top: -10px;
   display: inline-block;
 }
 
@@ -192,10 +106,41 @@ section {
   color: #2B2B2B;
 }
 
-/************ wedding ************/
+/*************home pages**************/
+#home {
+  padding: 20px 50px;
+  background-color: white;
+  margin: 0 auto 20px;
+  position: relative;
+}
 
-#wedding_img {
-  max-height: 680px;
+.cover-image {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#invitation-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  right: 80px;
+  top: 50px;
+  position: absolute;
+  width: 300px;
+  z-index: 100;
+}
+
+/*************** story ************/
+#timeline-embed {
+  margin-top: 20px !important;
+}
+
+
+/*************** wedding ************/
+
+#wedding img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
 /*************** map ************/
@@ -225,30 +170,9 @@ section {
   max-width: none;
 }
 
-/*************home pages**************/
-.cover-image {
-  width: 100%;
-  margin: 0 auto;
-  -moz-box-shadow:0 0 5px #000;
-  -webkit-box-shadow:0 0 5px #000;
-  box-shadow:0 0 5px #000;
-}
+/*************** comments ************/
 
-#invitation-container {
-  color: #bc223f;
-  background-color: rgba(255, 255, 255, 0.8);
-  right: 80px;
-  top: 80px;
-  position: absolute;
-  width: 300px;
-  z-index: 100;
-}
-
-/************** footer ****************/
+/************** footer **************/
 footer {
-  background: #222;
-  color: #888;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  border-top: 5px solid rgba(11, 11, 11, 0.4);
+  margin:-10px -10px 50px;
 }
