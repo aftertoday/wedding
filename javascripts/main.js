@@ -22,6 +22,6 @@ $(function(){
   script.src = "http://api.map.baidu.com/api?v=1.4&callback=showMap";
   document.body.appendChild(script);
 
-  $("#rsvp-form").validate();
-  $("#rsvp-form").submit(form_submit)
+  //$("#rsvp-form").validate();
+ // $("#rsvp-form").submit(form_submit)
 });
