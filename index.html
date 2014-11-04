@@ -198,6 +198,7 @@
       </p>
       <br/>
       <h4>欢迎来参加我们的婚礼！</h4>
+	 <!-- 
       <form class="" id="rsvp-form"  method="post" action="#">
   <p>为了方便安排酒席，如果您参加婚礼，请告诉我们具体信息，我们将会与您确认。</p>
   <input type="hidden" name="host_email" value="<%= item[:email] %>">
@@ -229,6 +230,13 @@
   </button>
 </form>
 
+-->
+<button type="button" onclick="sendWish();" class="btn btn-success">
+	<i class="icon-glass icon-white"></i>
+	我要喝喜酒
+</button>
+  
+  <!--
 <div class="modal hide" id="confirm-dialog">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -251,20 +259,21 @@
     <a href="#" class="btn btn-primary" id="rsvp-confirm-btn">发送</a>
   </div>
 </div>
+-->
 
 <div class="modal hide" id="success-dialog">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>发送消息成功</h3>
+    <h3>谢谢您的祝福</h3>
   </div>
   <div class="modal-body">
-    <p class="alert alert-success">感谢登记参加我们的婚礼，您将会收到确认邮件通知。</p>
+    <p class="alert alert-success">快拿起电话CALL我们~~，13661867804 O(∩_∩)O</p>
   </div>
   <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal">关闭</a>
   </div>
 </div>
-
+<!--
 <div class="modal hide" id="failure-dialog">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -285,8 +294,13 @@
     <a href="#" class="btn" data-dismiss="modal">关闭</a>
   </div>
 </div>
-
+-->
 <script>
+
+function  sendWish(){
+	$("#success-dialog").modal({backdrop:false});
+}
+
   function submit_data(name, email, count, description) {
     var params = {name: name, email: email, count: count, message: description, guestbook_id: 2 };
     var jqXHR = $.getJSON("http://i.91wedding.com/reservations/new?callback=?", {reservation:params}, function(data) {
